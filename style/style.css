@@ -367,7 +367,6 @@ table tr td
     flex-wrap: wrap;
 }
 
-.menu-center {
+#menu li:nth-last-child(-n+2) {
     margin: 0 auto;
 }
-

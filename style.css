@@ -1,0 +1,572 @@
+/* 
+   Premium Dark & Gold Theme
+   Identity: Luxury, Executive, High-Tech
+*/
+
+:root {
+    /* Color Palette */
+    /* Lighter darks as requested */
+    /*--bg-dark: #1C1C1C;*/
+    /*--bg-card: #282828;*/
+    --bg-dark: #121212;     /* main background – almost black */
+    --bg-card: #1A1A1A;     /* cards – dark gray, not black */
+    /* User Requested Gold RGB(86, 67, 30) */
+    --gold-primary: rgb(86, 67, 30);
+    /* Calculated hover: lighter version for visibility */
+    --gold-hover: rgb(126, 97, 45);
+    --gold-dim: rgb(56, 43, 19);
+    --text-main: #FFFFFF;
+    /* REPLACED GRAY WITH WHITE/GOLD */
+    --text-muted: #FFFFFF;
+    --border-color: var(--gold-primary);
+    /* Was gray #333 */
+
+    /* Spacing */
+    --section-padding: 80px 20px;
+
+    /* Fonts */
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 60px 20px;
+    border-top: 2px solid var(--gold-primary);
+    /* Gold border instead of gray */
+    text-align: center;
+    color: #fff;
+    /* White instead of muted */
+}
+
+/* Fixed selector */
+.footer-contact h4 {
+    color: var(--gold-primary);
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    font-weight: 600;
+    margin: 0 15px;
+    text-decoration: none;
+
+    background: linear-gradient(
+        135deg,
+        #EAD78C 0%,
+        #D4AF37 45%,
+        #B8962E 75%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow: 0 1px 5px rgba(212, 175, 55, 0.25);
+    transition: all 0.3s ease;
+}
+
+
+.contact-link:hover {
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--gold-primary);
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn-gold {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 6px;
+
+    background: linear-gradient(
+        135deg,
+        #FFF3B0 0%,
+        #E6C87A 25%,
+        #D4AF37 50%,
+        #B8962E 70%,
+        #7A5C2E 100%
+    );
+
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 6px 20px rgba(212, 175, 55, 0.45),
+        inset 0 1px 1px rgba(255, 255, 255, 0.35);
+
+    transition: all 0.3s ease;
+}
+
+
+.btn-gold:hover {
+    background: linear-gradient(135deg, var(--gold-hover), var(--gold-primary));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+}
+
+/* Sections Common */
+section {
+    padding: var(--section-padding);
+}
+
+/* Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+#navbar.scrolled {
+    padding: 15px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 90px;
+    /* Increased from 60px */
+    width: auto;
+    object-fit: contain;
+    /* Removed filter to display logo as-is. If it needs inversion, we can add it back. */
+}
+
+/* User asked for logo at top left - it is already in nav-container (flex space-between) which puts it left. 
+   If they want it absolute top left outside nav, I should ask, but standard is top-left of nav. 
+*/
+.hero-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--text-muted);
+
+    max-width: 600px;
+    margin: 0 auto 40px;
+
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+
+    position: relative;
+}
+
+.text-gold {
+    color: var(--gold-primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-main);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    color: var(--gold-primary);
+}
+
+.nav-cta {
+    padding: 8px 20px;
+    border-radius: 6px;
+
+    border: 1px solid transparent;
+    background:
+        linear-gradient(#0a0a0a, #0a0a0a) padding-box,
+        linear-gradient(
+            135deg,
+            #EAD78C,
+            #D4AF37,
+            #B8962E
+        ) border-box;
+
+    background-clip: padding-box, border-box;
+
+    background-image:
+        linear-gradient(#0a0a0a, #0a0a0a),
+        linear-gradient(
+            135deg,
+            #EAD78C,
+            #D4AF37,
+            #B8962E
+        );
+
+    color: #D4AF37 !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease;
+}
+
+#goals {
+    scroll-margin-top: 80px; /* ajuste selon la hauteur de ta navbar */
+}
+
+#modules {
+    scroll-margin-top: 80px; /* ajuste selon la hauteur de ta navbar */
+}
+
+#register {
+    scroll-margin-top: 80px; /* ajuste selon la hauteur de ta navbar */
+}
+
+.nav-cta:hover {
+    background: var(--gold-primary);
+    color: #000 !important;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at center, #1A1A1A 0%, #0B0B0B 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png');
+    /* Subtle texture placeholder */
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.hero-tagline {
+    color: #000;
+    background: linear-gradient(135deg, #d4af37, #b8962e);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #FFF3B0 0%,
+        #E6C87A 20%,
+        #D4AF37 45%,
+        #B8962E 65%,
+        #F5E6A8 85%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow: 0 2px 12px rgba(212, 175, 55, 0.35);
+}
+
+.hero-title span {
+    display: block;
+    font-size: 3.0rem;
+}
+
+/* Section Headings */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-subtitle {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #EAD78C 0%,
+        #D4AF37 40%,
+        #B8962E 70%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow: 0 1px 6px rgba(212, 175, 55, 0.25);
+}
+
+
+.section-title {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+/* Goals Grid */
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.goal-card {
+    background: var(--bg-card);
+    padding: 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.goal-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold-primary);
+}
+
+.goal-icon {
+    font-size: 2.5rem;
+    color: var(--gold-primary);
+    margin-bottom: 20px;
+}
+
+.goal-title {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: var(--font-heading);
+}
+
+.goal-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Modules List */
+.modules-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.module-item {
+    background: var(--bg-card);
+    border-left: 4px solid var(--gold-dim);
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.module-item:hover {
+    background: #1a1a1a;
+    border-left-color: var(--gold-primary);
+    transform: translateX(10px);
+}
+
+.gold-shiny {
+    background: linear-gradient(
+        135deg,
+        #EAD78C 0%,
+        #D4AF37 40%,
+        #B8962E 70%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow: 0 1px 6px rgba(212, 175, 55, 0.25);
+}
+
+
+.module-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #EAD78C 0%,
+        #D4AF37 40%,
+        #B8962E 70%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow: 0 1px 6px rgba(212, 175, 55, 0.25);
+}
+.module-title {
+    flex-grow: 1;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Duration */
+.duration-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.schedule-list {
+    margin-top: 30px;
+    text-align: left;
+    display: inline-block;
+}
+
+.schedule-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    min-width: 300px;
+}
+
+.schedule-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+
+    background: linear-gradient(
+        135deg,
+        #EAD78C 0%,
+        #D4AF37 40%,
+        #B8962E 70%
+    );
+}
+
+
+.schedule-item:last-child {
+    border-bottom: none;
+}
+
+.schedule-day {
+    color: #fff;
+    font-weight: 600;
+}
+
+.schedule-time {
+    background: linear-gradient(
+        135deg,
+        #EAD78C 0%,
+        #D4AF37 40%,
+        #B8962E 70%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow: 0 1px 6px rgba(212, 175, 55, 0.25);
+    font-weight: 600;
+}
+
+/* Registration */
+.registration-box {
+    background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+    padding: 60px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid var(--gold-dim);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Team */
+.team-member {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.team-desc {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-style: italic;
+}

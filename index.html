@@ -1,152 +1,233 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <script src="https://code.jquery.com/jquery.js"></script>
-    <script> 
-    $(function(){
-      $("#include_latest").load("latest_news.html"); 
-    });
-   </script>
-  <title>Anass Nouri - Home </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Work With A.I: From Insights to Practical Use</title>
+    <meta name="description"
+        content="Executive Certification focused on Artificial Intelligence tools. Master AI for productivity and decision making.">
 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="description" content="Personnal webpage" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-  
- 
-<style type="text/css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
 
-.button{
-  width: 100px;
-}
-  .button:hover{
-
-   background-color: blue;
-   color: #ffffff;
-  }
- 
- .img_anass{
-  float: right;
-  padding-top: 15px;
- }
- #contact_cv
- {
-  display: flex;
- }
-
- 
- </style>
-
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <font size="3"><h1><a href="index.html">Anass <span class="logo_colour">Nouri</span></a></h1></font>
-        <!-- <font size="2"> <h2>Associate Professor of Computer Science/Vision/I.A, Ibn Tofail University, Kénitra/Morocco</h2></font>-->
-       <font size="2"> <h2>Associate Professor A.I/Vision</h2></font>
-          <!--    <font size="2"> <h2>Researcher R&D at Glancy</h2></font>-->
+
+    <!-- Landscape Warning Overlay -->
+    <div id="rotate-warning">
+        <div class="rotate-icon">⟳</div>
+        <p>Please rotate your device to landscape mode for the best experience.</p>
+    </div>
+
+    <!-- Navigation (Simple Sticky) -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo-link">
+                <img src="logo.png" alt="Smart Work A.I." class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#modules">Modules</a></li>
+                <li><a href="#register" class="nav-cta">Register</a></li>
+
+            </ul>
         </div>
-                                                <div class="img_anass">
-            
-            <img src="anass_2025.png"
-                  height="200px" 
-                 width="200px">
-          </div>
+    </nav>
 
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li><a href="index.html">About</a></li>
-           <li><a href="research.html">Research</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="database.html">Database</a></li>
-          <li><a href="open_positions.html">Open Positions/Call of Papers</a></li>
-          <li><a href="students.html">Students</a></li> 
-          <li><a href="executive_certificate.html">Executive Certificate</a></li>
-
-                
- 
-         
-        </ul>
-      </div>
-    </div>
-    <div id="site_content">
-      <div class="sidebar" >
-        <div id="include_latest"></div>
-       
-    
- 
-        <h1>Useful Links</h1>
-
-        <ul>
-
-          <li> <font size="8"><a href="https://www.researchgate.net/profile/Anass_Nouri" target="_blank"><i class="fab fa-researchgate"></i></a> </font></li>
-          <li><font size="8"><a href="https://fr.linkedin.com/in/anass-nouri-aa01a739"><i class="fab fa-linkedin"></i></a></font></li>
-          <li><font size="4"><a href="https://scholar.google.fr/citations?user=EX2K-DIAAAAJ&hl=fr"><i class="ai ai-google-scholar-square ai-3x"></i></a></font></li>
-          
-
-        </ul>
-  
- 
-      </div>
-      <div id="content">
-
-        <div class="contentx">
-           
-            
-              <font size="3">
-                <p  class="px" style="text-align:justify">
-Anass Nouri earned his M.Sc. degree in Intelligent Systems and Image Analysis from the University of Poitiers (France) in 2013, followed by a Ph.D. in Computer Science from Caen Normandy University in France in 2016. Between 2016 and 2017, he served as an assistant professor in the Computer Science Department at the National School of Engineering of Caen (ENSICAEN), affiliated with the Greyc Laboratory (UMR 6072), focusing his research on 3D mesh analysis. From 2017 to 2018, Nouri was a postdoctoral fellow at the Institut du Thorax Lab (UMR 1087) and RMES Lab (UMR 1229) at the University of Nantes, concentrating on the development of automatic detection and characterization techniques for 3D bifurcations to predict intracranial aneurysms. In the period from 2018 to 2019, he held the position of Associate Professor of Computer Science at the ISEN School of Engineering (Institut Supérieur de l’Electronique et du Numérique) in Brest/France and was part of the Vision research team at L@bIsen. Anass Nouri has been awarded two international patents and has contributed to over 18 papers at referred international conferences, five in international journals, and one book chapter. Currently, he is an associate professor of compute science and director of the Cenrter of Artificial Intelligence & Programming at the Ibn Tofail University in Morocco. He is a research member of the GREYC Laboratory at Caen Normandy University in France. He teaches courses in computer programming, image analysis, and machine learning. His research now focuses on 2D and 3D image/volume processing, visual saliency, objective quality assessment, medical imaging, and machine learning. He's also consultant in the field of Computer Vision and A.I.
- 
-
- <!--Anass Nouri earned his M.Sc. degree in Intelligent Systems and Image Analysis from the University of Poitiers (France) in 2013, followed by a Ph.D. in Computer Science from Caen Normandy University in France in 2016. Between 2016 and 2017, he served as an assistant professor in the Computer Science Department at the National School of Engineering of Caen (ENSICAEN), affiliated with the Greyc Laboratory (UMR 6072), focusing his research on 3D mesh analysis. From 2017 to 2018, Nouri was a postdoctoral fellow at the Institut du Thorax Lab (UMR 1087) and RMES Lab (UMR 1229) at the University of Nantes, concentrating on the development of automatic detection and characterization techniques for 3D bifurcations to predict intracranial aneurysms. In the period from 2018 to 2019, he held the position of Associate Professor of Computer Science at the ISEN School of Engineering (Institut Supérieur de l’Electronique et du Numérique) in Brest/France and was part of the Vision research team at L@bIsen. Presently, he is an Associate Professor of Computer Science at Ibn Tofail University in Kenitra/Morocco. Nouri has been awarded two international patents and has contributed to over 16 papers at referred international conferences, five in international journals, and one book chapter. He teaches courses in computer programming, image analysis, and machine learning. His research now focuses on 2D and 3D image/volume processing, visual saliency, objective quality assessment, medical imaging, and machine learning. His is affiliated as permanent member of the research team Data Processing & Artificial Intelligence of the SETIME laboratory of the faculty of Science in Ibn Tofail University and an associate member of the Greyc laboratory in Caen Normandy University.  -->
-
-                  <!--
-                  Anass Nouri received the M.Sc. degree in computer science and image processing from the Ibn Tofail university and the university of Poitiers (France) in 2014 and the Ph.D degree in computer science 2017 at the Greyc Laboratory in ENSICAEN (Caen, France) under the supervision of Pr. Olivier Lézoray and Dr. Christophe Charrier in the IMAGE research team. In 2016-2017, he was an assistant professor at the computer science department of the National School of Engineering of Caen (ENSICAEN) associated to the Greyc Lab where he continued its research on 3D colored meshes visual saliency and perceptual quality. In 2017-2018, he was a postdoctoral fellow at the Institut du Thorax Lab (UMR 1087) and RMES Lab (UMR 1229) in the university of Nantes where he was working on the automatic detection and characterization of 3D bifurcations for intracranial aneurysms prediction with Dr. Florent Autrusseau and Dr. Romain Bourcier. In 2018-2019, he was an Associate Professor of computer science at the ISEN school of Engenieering (Institut Supérieur de l’Electronique et du Numérique) and member of the Vision research team of the L@bIsen.
-    
-
-                 Currently, he is an Associate Professor of computer science at Ibn Tofail University of Morocco. He gave lectures in computer programming, image analysis and machine learning. His current research interests include 2D images, 3D mesh/volume processing, visual saliency, objective quality assessment, medical imaging and machine learning. 
-                 -->
-                  <!--  Currently, he is researcher R&D at Glancy3D. -->
- <!--   <button onclick=" window.open('CV_Anass_Nouri_2024.pdf', '_blank'); return false;">Download My CV <i class="fas fa-file-pdf"> </i> </button> </p>-->
-              </font>
-            
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="container hero-content">
+            <span class="hero-tagline">Executive Certificate</span>
+            <h1 class="hero-title">
+                Smart Work With A.I:
+                <span>From Insights to Practical Use</span>
+            </h1>
+            <p class="hero-quote">
+                “A.I won’t replace you — but someone who knows how to use it WILL.”
+            </p>
+            <!-- <a href="#register" class="btn-gold">Register Now</a>-->
         </div>
- 
-      <div id="contact">
-          <h2>Contact</h2>
+    </header>
 
-          <font size="2"><i class="fas fa-envelope"></i></font> <font size="3">: anassnouri2@gmail.com </font> </br> </br>   
+    <!-- Goals & Overview -->
+    <section id="goals">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Why This Certification?</span>
+                <h2 class="section-title">Elevate Your Leadership with A.I.</h2>
+            </div>
 
-          <!--<font size="3"><i class="fas fa-map-marker-alt"></i></font><font size="3">: Kénitra, Morocco</font> </br> </br> -->
-       
-      </div>
-  
-    </div>
-  </div>
-    <div id="footer">
-      <p><a href="index.html">Home</a>  | <a href="publications.html">Publications</a> | <a href="courses.html">Courses</a> </p>
-      <p>Copyright &copy; A. Nouri 2023 | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a></p>
-    </div>
+            <div class="goals-grid">
+                <div class="goal-card">
+                    <div class="goal-icon">🚀</div>
+                    <h3 class="goal-title">Master the Essentials of A.I for Modern Leadership</h3>
+                    <p class="goal-desc">A.I. is no longer optional. Gain the core skills to use A.I confidently— from
+                        smart prompting to ethical application— and turn insight into action.</p>
+                </div>
+                <div class="goal-card">
+                    <div class="goal-icon">⚡</div>
+                    <h3 class="goal-title">Boost Productivity Through Intelligent Tools & Automation</h3>
+                    <p class="goal-desc">Discover how A.I tools can simplify your work, accelerate learning, and
+                        dramatically improve productivity across everyday tasks.</p>
+                </div>
+                <div class="goal-card">
+                    <div class="goal-icon">🎯</div>
+                    <h3 class="goal-title">From Practice to Smarter Decisions</h3>
+                    <p class="goal-desc">Experience A.I in action through concrete examples that help you make smarter
+                        decisions and improve performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Modules / Curriculum -->
+    <section id="modules" style="background-color: #0f0f0f;">
+        <div class="container modules-container">
+            <div class="section-header">
+                <span class="section-subtitle">Curriculum</span>
+                <h2 class="section-title">What You Will Learn</h2>
+            </div>
 
+            <div class="module-item">
+                <span class="module-number">01</span>
+                <span class="module-title">A.I Essentials</span>
+            </div>
+            <div class="module-item">
+                <span class="module-number">02</span>
+                <span class="module-title">Leading Change</span>
+            </div>
+            <div class="module-item">
+                <span class="module-number">03</span>
+                <span class="module-title">A.I and Prompting: A Key Skill for the Modern Leader</span>
+            </div>
+            <div class="module-item">
+                <span class="module-number">04</span>
+                <span class="module-title">Organize Your Work and Learn Faster with Notebook LM</span>
+            </div>
+            <div class="module-item">
+                <span class="module-number">05</span>
+                <span class="module-title">Create and Enhance Visuals with A.I</span>
+            </div>
+            <div class="module-item">
+                <span class="module-number">06</span>
+                <span class="module-title">Imagine and Edit Videos with A.I</span>
+            </div>
+            <div class="module-item">
+                <span class="module-number">07</span>
+                <span class="module-title">Design and Enrich Your Presentations with A.I</span>
+            </div>
+            <div class="module-item">
+                <span class="module-number">08</span>
+                <span class="module-title">Excel Has Never Been More Powerful with A.I</span>
+            </div>
+            <div class="module-item">
+                <span class="module-number">09</span>
+                <span class="module-title">A.I Experience 1: Teaching Machines to Learn Gestures Visually</span>
+            </div>
+            <div class="module-item">
+                <span class="module-number">10</span>
+                <span class="module-title">A.I Experience 2: Teaching Machines to Learn Numbers Visually</span>
+            </div>
+            <div class="module-item">
+                <span class="module-number">11</span>
+                <span class="module-title">Manage Projects with Agility and Anticipate Risks Using A.I Tools</span>
+            </div>
+            <div class="module-item">
+                <span class="module-number">12</span>
+                <span class="module-title">Ethics and A.I: One Cannot Exist Without the Other</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Duration & Format -->
+    <section id="duration">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Format</span>
+                <h2 class="section-title">Program Schedule</h2>
+            </div>
+            <div class="duration-card">
+                <h3 class="gold-shiny" style="margin-bottom: 10px;">8 Weeks Training</h3>
+                <p style="color: #fff;">100% Online • Live Sessions</p>
+
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <span class="schedule-day">Thursday Evening</span>
+                        <span class="schedule-time">2 Hours</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-day">Friday Evening</span>
+                        <span class="schedule-time">2 Hours</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-day">Saturday Morning</span>
+                        <span class="schedule-time">3 Hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration -->
+    <section id="register">
+        <div class="container" style="max-width: 800px;">
+            <div class="registration-box">
+                <h2 class="section-title" style="margin-bottom: 20px;">Ready to Transform Your Career?</h2>
+                <p style="color: var(--text-muted); margin-bottom: 40px;">
+                    Secure your spot in the upcoming cohort. Seats are limited to ensure personalized attention.
+                </p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSxxxx/viewform" target="_blank" class="btn-gold"
+                    style="font-size: 1.1rem; padding: 18px 40px;">
+                    Register
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section id="team" style="background-color: #0f0f0f;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">About Us</span>
+                <h2 class="section-title">The Organizing Team</h2>
+            </div>
+            <div class="team-member">
+                <p class="team-desc">
+                    "We are a collective of A.I experts from diverse sectors: private IT sector, private Industry sector
+                    and university professors (from Morocco and France) dedicated to bridging the
+                    gap between technological insight and practical professional application."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer>
+        <div class="container footer-contact">
+            <span class="section-subtitle">Contact us</span>
+            <p>Have questions? Reach out to our admissions team.</p>
+            <div style="margin-top: 20px;">
+                <a href="mailto:smart.ai.uit@gmail.com" class="contact-link">smart.ai.uit@gmail.com</a>
+                <span class="gold-shiny">|</span>
+                <a href="Pr. Anass Nouri - 06 10 91 76 67" class="contact-link">Pr. Anass Nouri - 06 10 91 76 67</a>
+            </div>
+            <p style="margin-top: 40px; font-size: 0.8rem; opacity: 1; color: #fff;">
+                &copy; 2026 - Pr. Anass Nouri - All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-

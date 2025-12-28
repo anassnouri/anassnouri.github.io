@@ -1,0 +1,91 @@
+/* --- Landscape Warning Overlay --- */
+#rotate-warning {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    /* Deep black background */
+    z-index: 99999;
+    /* Highest priority */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.rotate-icon {
+    font-size: 4rem;
+    color: var(--gold-primary);
+    margin-bottom: 20px;
+    animation: flash-rotate 2s infinite ease-in-out;
+}
+
+#rotate-warning p {
+    color: #fff;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    max-width: 300px;
+}
+
+@keyframes flash-rotate {
+    0% {
+        opacity: 0.3;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: rotate(0deg);
+    }
+}
+
+/* --- Mobile Portrait Detection --- */
+/* Show warning only on strict mobile portrait screens */
+@media only screen and (max-width: 900px) and (orientation: portrait) {
+    #rotate-warning {
+        display: flex;
+    }
+
+    /* Hide scroll on body when warning is visible */
+    body {
+        overflow: hidden;
+    }
+}
+
+/* --- Mobile Landscape Adjustments --- */
+/* Reduce navbar height on mobile landscape */
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    #navbar {
+        padding: 5px 0 !important;
+        /* drastically reduced padding */
+    }
+
+    .logo-img {
+        height: 50px !important;
+        /* Smaller logo */
+    }
+
+    .nav-links {
+        gap: 15px;
+        /* Tighter spacing */
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+
+    /* Adjust Hero Title so it isn't hidden by navbar */
+    #hero {
+        padding-top: 60px;
+    }
+}

@@ -94,3 +94,26 @@
         /* Reduced from 80px to be visible */
     }
 }
+
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+
+    #hero {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-title span {
+        font-size: 1.8rem;
+    }
+
+    .hero-quote {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        max-width: 90%;
+    }
+}
